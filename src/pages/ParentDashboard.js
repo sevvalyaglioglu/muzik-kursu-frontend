@@ -203,6 +203,7 @@ const ParentDashboard = () => {
                       <span className="badge rounded-pill text-white"
                       style={{ backgroundColor: "#ebbcbc" }}>Müzik</span>
                       <small className="text-muted">Kontenjan: {course.quota}</small>
+                      <span className="badge bg-light text-dark border">🕒 {course.time || "Belirtilmedi"}</span>
                     </div>
                     <h5 className="card-title fw-bold">{course.title}</h5>
                     <p className="card-text text-muted small line-clamp-2">{course.description}</p>

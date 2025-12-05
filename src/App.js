@@ -8,8 +8,6 @@ import { AuthContext } from './context/AuthContext';
 import './App.css';
 import Register from './pages/Register';
 
-// ... önceki kodlar ...
-
 // Home bileşeninin içindeki return kısmı:
 const Home = () => {
   const { user, logout } = useContext(AuthContext);
@@ -41,8 +39,8 @@ const Home = () => {
               {/* 1. İKON: Role göre değişen görsel */}
               <img 
                 src={user?.role === 'TEACHER' 
-                  ? "https://cdn-icons-png.flaticon.com/512/1995/1995574.png" // Öğretmen İkonu (Tahta/Hoca)
-                  : "https://cdn-icons-png.flaticon.com/512/2922/2922510.png" // Veli İkonu (Aile)
+                  ? "https://cdn-icons-png.flaticon.com/512/9291/9291430.png" // Öğretmen (Sunum yapan)
+                  : "https://cdn-icons-png.flaticon.com/512/4161/4161385.png" // Veli (Aile tablosu)
                 }
                 alt="rol"
                 width="32"
