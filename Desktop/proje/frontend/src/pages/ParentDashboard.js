@@ -27,7 +27,8 @@ const ParentDashboard = () => {
   const ageOptions = Array.from({ length: 14 }, (_, i) => i + 5);
 
   // Backend Adresi (Render)
-  const API_URL = "https://muzik-kursu-backend.onrender.com";
+  const API_URL = process.env.REACT_APP_API_URL;
+
 
   useEffect(() => {
     fetchMyStudents();

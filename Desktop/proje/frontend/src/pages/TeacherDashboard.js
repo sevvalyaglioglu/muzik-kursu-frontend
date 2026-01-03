@@ -22,7 +22,8 @@ const TeacherDashboard = () => {
   const [editingCourseId, setEditingCourseId] = useState(null);
 
   // Backend Adresi (Render)
-  const API_URL = "https://muzik-kursu-backend.onrender.com";
+  const API_URL = process.env.REACT_APP_API_URL;
+
 
   useEffect(() => {
     fetchCourses();

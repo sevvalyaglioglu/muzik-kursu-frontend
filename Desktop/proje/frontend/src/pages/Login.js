@@ -11,7 +11,8 @@ const Login = () => {
   const [error, setError] = useState("");
 
   // Backend Adresi (Render)
-  const API_URL = "https://muzik-kursu-backend.onrender.com";
+  const API_URL = process.env.REACT_APP_API_URL;
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
