@@ -1,0 +1,38 @@
+/* Sayfa Arka Planı: Hafif gri, gözü yormaz */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Kart Tasarımı: Kenarlık yok, yuvarlatılmış köşeler, yumuşak gölge */
+.card {
+  border: none !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Kartın üzerine gelince hafifçe yukarı kalksın */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Butonlar */
+.btn {
+  border-radius: 50px !important; /* Hap şeklinde butonlar */
+  padding: 8px 20px !important;
+  font-weight: 600 !important;
+}
+
+/* Navbar (Üst Menü) için Gradyan Renk */
+.navbar {
+  background: linear-gradient(90deg, #eef47f 0%, #eef56a 100%) !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Giriş Sayfası Kartı */
+.login-card {
+  border-top: 5px solid #eef47f !important;
+}
